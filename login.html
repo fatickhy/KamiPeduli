@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login / Registration Form</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="icon" href="image/LogoWeb.png" type="image/x-icon">
+</head>
+<body>
+  
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>Registrasi disini.</h1>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Registrasi</button>
+        <span>atau gunakan akunmu</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="index.html">
+        <h1>Masuk Disini.</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Lupa password?</a>
+          </div>
+        </div>
+        <button onclick="masuk">Masuk</button>
+        <span>atau gunakan akunmu</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hallo <br> Teman</h1>
+          <p>Jika kamu memiliki akun, masuk disini dan ayo saling membantu</p>
+          <button class="ghost" id="login">Masuk
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Ayo<br>Saling Menolong</h1>
+          <p>Jika kamu belum memiliki akun, Ayo bergabung dengan kami</p>
+          <button class="ghost" id="register">Registrasi
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>
