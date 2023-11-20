@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donasi</title>
+    <meta charset="utf-8">
+    <title>Kami Peduli</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -24,13 +27,15 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
     <!-- Template Stylesheet -->
-    <link href="css/donasi.css" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="css/donasi.css"> -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
 </head>
+
 <body>
+   
+
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn"  style="color: #001D23;">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
@@ -58,15 +63,15 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link">Beranda</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link active dropdown-toggle" class="nav-item nav-link active" data-bs-toggle="dropdown">Kategori</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kategori</a>
                         <div class="dropdown-menu m-0">
                             <a href="relawan.html" class="dropdown-item">Relawan</a>
                             <a href="donasi.html" class="dropdown-item">Donasi</a>
                             <a href="psikososial.html" class="dropdown-item">Psikososial</a>
                         </div>
                     </div>
-                    <a href="peta.html" class="nav-item nav-link">Peta</a>
-                    <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                    <a href="peta.html" class="nav-item nav-link active">Peta</a>
+                    <a href="tentang.html" class="nav-item nav-link ">Tentang</a>
                     <a href="login.html" class="nav-item nav-link">Masuk</a>
                     
                 </div>
@@ -83,76 +88,47 @@
     </div>
     <!-- Navbar End -->
 
-
     <div class="tentang">
     </div>
-    
-    <section class="my-6 wow fadeIn" id="donasi" data-wow-delay="0.1s">
-        <center>
-            <h3>Bagi Saudara Kita yang Membutuhkan</h3>
-        </center>
-        <div class="container py-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-8">
-              <div class="card rounded-3">
-                <div class="card-body mx-1 my-2">
-                    <div style="position: relative;">
-                        <div class="line"></div>
-                        <div class="text-muted centered-text">Pilih Nominal Donasi</div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="btn-group-vertical w-100" role="group" aria-label="Vertical radio toggle button group">
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-                            <label class="btn" for="vbtn-radio1" onclick="tampilkanAngka(35000)">
-                                <img src="img/emote1.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 35.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                            <label class="btn" for="vbtn-radio2" onclick="tampilkanAngka(50000)">
-                                <img src="img/emote2.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 50.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-                            <label class="btn" for="vbtn-radio3" onclick="tampilkanAngka(75000)">
-                                <img src="img/emote3.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 75.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
-                            <label class="btn" for="vbtn-radio4" onclick="tampilkanAngka(100000)">
-                                <img src="img/emote4.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 100.000
-                            </label>
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-column py-4">
-                            <p class="mb-1 small">Nominal Lainnya</p>
-                            <div class="d-flex flex-row align-items-center">
-                                <h6 class="mb-0 pe-1">Rp.</h6>
-                                <input type="text" class="form-control form-control-sm" id="numberExample" style="width: 100%;" />
-                            </div>
-                        </div>
-                    </div>
-                    <p class="small" style="">Minimum Donasi Rp. 10.000</p>
-                    <a href="lanjut_donasi.html">
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%; color: #fff;">Lanjut Donasi</button>
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-    <!-- footer -->
-    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/about-1.jpg" alt="" style="object-fit: cover;">
+                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Tentang kami</div>
+                        <h1 class="display-6 mb-5">Kami Membantu Orang - Orang Yang
+                            Membutuhkan Bantuan Kebencanaan</h1>
+                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                            <p class="text-dark mb-2">Website ini bertujuan untuk memberikan informasi real-time mengenai bencana alam, termasuk gempa bumi, banjir, badai, kebakaran hutan, dan lainnya. Kami memberikan informasi terbaru, panduan tindakan darurat yang dibutuhkan dalam berbagai jenis bencana, dan sumber daya bagi individu dan komunitas yang terkena dampak bencana.
+                            </p>
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jg4NJl5DR2XqcRNhtZ_WbtKO-E_cDTQ&ehbc=2E312F" width="2000" height="600"></iframe>
+
+    <!-- Testimoni End -->
+    
+    <div class="container-fluid bg-dark text-white-50 footer  wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h1 class="text-white">Kami<span class="fw-bold text-primary mb-4">Peduli</span></h1>
-                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+                    <p>Kami Peduli siap membantu, Saling Menolong Siapa Saja dan Kapan Saja</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -198,8 +174,8 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-    
+
+<!-- Back to Top -->
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -208,9 +184,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
-    
+
     <!-- Template Javascript -->
-    <script src="js/donasi.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

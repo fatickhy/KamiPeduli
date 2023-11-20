@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donasi</title>
+    <title>Lanjut Donasi</title>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -24,29 +24,13 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Template Stylesheet -->
-    <link href="css/donasi.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="css/donasi.css"> -->
+    <!-- Template Stylesheet -->
+    <link href="css/lanjut_donasi.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn"  style="color: #001D23;">
-        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>Kota Palu, Sulawesi Tengah, Indonesia</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>kamipeduli@gmail.com</small>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-
+    <div class="container-fluid fixed-top px-0 wow fadeIn bg-dark" data-wow-delay="0.1s">
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="text-white" >Kami<span class="fw-bold text-primary m-0">Peduli</span></h1>
@@ -56,17 +40,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Beranda</a>
+                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link active dropdown-toggle" class="nav-item nav-link active" data-bs-toggle="dropdown">Kategori</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kategori</a>
                         <div class="dropdown-menu m-0">
                             <a href="relawan.html" class="dropdown-item">Relawan</a>
                             <a href="donasi.html" class="dropdown-item">Donasi</a>
                             <a href="psikososial.html" class="dropdown-item">Psikososial</a>
+                            <a href="testimoni.html" class="dropdown-item">Testimoni</a>
                         </div>
                     </div>
                     <a href="peta.html" class="nav-item nav-link">Peta</a>
-                    <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                    <a href="causes.html" class="nav-item nav-link">Tentang</a>
                     <a href="login.html" class="nav-item nav-link">Masuk</a>
                     
                 </div>
@@ -82,12 +67,8 @@
         </nav>
     </div>
     <!-- Navbar End -->
-
-
-    <div class="tentang">
-    </div>
     
-    <section class="my-6 wow fadeIn" id="donasi" data-wow-delay="0.1s">
+    <section class="my-6" id="donasi">
         <center>
             <h3>Bagi Saudara Kita yang Membutuhkan</h3>
         </center>
@@ -100,51 +81,100 @@
                         <div class="line"></div>
                         <div class="text-muted centered-text">Pilih Nominal Donasi</div>
                     </div>
-                    <div class="pt-3">
-                        <div class="btn-group-vertical w-100" role="group" aria-label="Vertical radio toggle button group">
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-                            <label class="btn" for="vbtn-radio1" onclick="tampilkanAngka(35000)">
-                                <img src="img/emote1.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 35.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                            <label class="btn" for="vbtn-radio2" onclick="tampilkanAngka(50000)">
-                                <img src="img/emote2.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 50.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-                            <label class="btn" for="vbtn-radio3" onclick="tampilkanAngka(75000)">
-                                <img src="img/emote3.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 75.000
-                            </label>
-                    
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
-                            <label class="btn" for="vbtn-radio4" onclick="tampilkanAngka(100000)">
-                                <img src="img/emote4.png" style="width: 3rem; padding-right: 1rem;">
-                                Rp. 100.000
-                            </label>
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-column py-4">
-                            <p class="mb-1 small">Nominal Lainnya</p>
-                            <div class="d-flex flex-row align-items-center">
-                                <h6 class="mb-0 pe-1">Rp.</h6>
-                                <input type="text" class="form-control form-control-sm" id="numberExample" style="width: 100%;" />
+                    <div class="kotak"></div>
+                    <div style="position: relative;">
+                        <div class="line"></div>
+                        <div class="text-muted centered-text">Pilih Metode Pembayaran</div>
+                    </div>
+                    <div class="btn-group w-100 my-3 pembayaran" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">
+                            <img src="img/logoGoPay.svg">
+                        </label>
+                        <!-- <button type="radio" class="btn-check" name="btnradio" data-bs-toggle="modal" data-bs-target="#modalOvo"></button> -->
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-bs-target="#modalOvo">
+                        <label class="btn btn-outline-primary" for="btnradio2">
+                            <img src="img/dana.png">
+                        </label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">
+                            <img src="img/ShopeePay.png">
+                        </label>
+                    </div>
+                    <div class="my-2" style="position: relative;">
+                        <div class="line"></div>
+                        <div class="text-muted centered-text">Informasi Donatur</div>
+                    </div>
+
+                    <div class="form-check form-switch switch my-4 p-0">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Sembunyikan Nama Saya (Anonim)</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                    </div>
+
+                    <p style="color: #000; text-align: center; margin: 0 0 2rem 0;">Masuk atau lengkapi data di bawah ini</p>
+
+                    <form>
+                        <div class="mt-4">
+                            <div class="textOnInput">
+                                <label for="inputText">Nama Lengkap</label>
+                                <input class="form-control" type="text">
                             </div>
                         </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Nomor Telepon</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Email (Opsional)</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Pesan(Opsional)</label>
+                                <textarea class="form-control" id="" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Ya, Saya telah membaca dan menyetujui Syarat & Ketentuan Donasi
+                            </label>
+                          </div>
+                      </form>
+                      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGopay">
+                        Launch static backdrop modal
+                      </button> -->
+                      <button type="button" class="btn btn-primary btn-lg"  id="donateButton" style="width: 100%; color: #fff;">Donasi</button>
                     </div>
-                    <p class="small" style="">Minimum Donasi Rp. 10.000</p>
-                    <a href="lanjut_donasi.html">
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%; color: #fff;">Lanjut Donasi</button>
-                    </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </section>
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="modalGopay" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">QR Code GoPay</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+              <img src="img/qr_gopay.png" alt="" width="75%" /><br>
+              <p style="margin: 1rem;">Scan kode QR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Modal End -->
 
     <!-- footer -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -210,7 +240,6 @@
     <script src="lib/parallax/parallax.min.js"></script>
     
     <!-- Template Javascript -->
-    <script src="js/donasi.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/lanjut_donasi.js"></script>
 </body>
 </html>
