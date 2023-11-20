@@ -89,17 +89,17 @@
                     <div class="btn-group w-100 my-3 pembayaran" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio1">
-                            <img src="img/logoGoPay.svg">
+                            <img src="img/logoGoPay.png" style="height: 80px; padding: 1rem 0;">
                         </label>
                         <!-- <button type="radio" class="btn-check" name="btnradio" data-bs-toggle="modal" data-bs-target="#modalOvo"></button> -->
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-bs-target="#modalOvo">
                         <label class="btn btn-outline-primary" for="btnradio2">
-                            <img src="img/dana.png">
+                            <img src="img/logoDana.svg" style="padding: 1rem 0;">
                         </label>
                       
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                         <label class="btn btn-outline-primary" for="btnradio3">
-                            <img src="img/ShopeePay.png">
+                            <img src="img/logoShoopePay.svg" style="padding: 0.5rem 0;">
                         </label>
                     </div>
                     <div class="my-2" style="position: relative;">
@@ -174,6 +174,40 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="modalDana" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">QR Code Dana</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+              <img src="img/qr_dana.png" alt="" width="75%" /><br>
+              <p style="margin: 1rem;">Scan kode QR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalShopee" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">QR Code Shopee Pay</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+              <img src="img/qr_shopee.png" alt="" width="75%" /><br>
+              <p style="margin: 1rem;">Scan kode QR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
       <!-- Modal End -->
 
     <!-- footer -->
